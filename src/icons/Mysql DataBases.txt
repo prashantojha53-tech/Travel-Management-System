@@ -1,0 +1,48 @@
+ 1> Account table--->
+CREATE TABLE account (
+    username VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(20),
+    password VARCHAR(20) NOT NULL,
+    security VARCHAR(100),
+    answer VARCHAR(50)
+);
+
+ 2>CUSTOMER TABLE---->
+CREATE TABLE customer (
+    id VARCHAR(30) PRIMARY KEY,
+    username VARCHAR(20) NOT NULL,
+    number VARCHAR(30),
+    name VARCHAR(30),
+    gender VARCHAR(20),
+    country VARCHAR(30),
+    address VARCHAR(50),
+    phone VARCHAR(15),
+    email VARCHAR(40)
+);
+
+
+  3>BookHootel------>
+CREATE TABLE bookhotel (
+    booking_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(20),
+    name VARCHAR(30),
+    persons INT,
+    days INT,
+    ac VARCHAR(10),
+    food VARCHAR(10),
+    id VARCHAR(20),
+    number VARCHAR(20),
+    phone VARCHAR(20),
+    price INT
+);
+
+  4>HotelTable---->
+CREATE TABLE hotel (
+    name VARCHAR(50),
+    costperperson VARCHAR(20),
+    acroom VARCHAR(20),
+    foodincluded VARCHAR(10)
+);
+
+
+
